@@ -1,0 +1,161 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    /* outline: none; */
+    /* border: 6px; */
+}
+
+ body{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    min-height: 100vh;
+    background-color: #4f5d73;
+    overflow: hidden;
+}
+
+#main{
+    width: 400px;
+    max-width: 540px;
+    height:500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+} 
+
+
+#msg_area{
+    height: 82%;
+    padding: 0 12px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+} 
+
+ #bot{
+    width:50px;
+    height: 50px;
+    background:url(bot.png);
+    background-size: 100%;
+    border-radius: 50%;
+    margin: 10px;
+} 
+
+ #robot{
+    text-align: center;
+    font-family: sans-serif;
+    background: #99b0b3;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    border-radius: 5%;
+    align-items: center;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+} 
+
+#input{
+    height: 7%;
+    /* min-height: 42px; */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin:8px 16px;
+    border-radius: 32px;
+    /* border: solid 1px; */
+    background: linear-gradient(#ececee 50%, #1c1f46 50%);
+} 
+
+#text{
+    outline: none;
+    font-size: 15px;
+    background: #ececee;
+    color: #333;
+    border-radius:  32px 0 32px 32px;
+    padding: 0 16px;
+    border: solid 1px #777;
+    border-right: none;   
+}  
+
+#send{
+    outline: none;
+    font-size: 20px;
+    color: #eee;
+    background: #1c1f46;
+    border: none;
+    border-radius: 32px;
+    transition-duration: 0.2s;
+}
+
+#send:active{
+    font-size:16px;
+
+}
+
+.left,.right{
+    font-size: 15px;
+    font-family:  'Raleway', sans-serif;
+    display: inline-block;
+    width: auto;
+    max-width: 60%;
+    padding: 14px;
+    word-wrap: break-word;
+    margin: 8px 14px ;
+}
+
+.left{
+    color: #000;
+    background: #b3bfca;
+    border-radius: 0 16px 16px 16px;
+}
+
+.right{
+    color: #fff;
+    background: #1c1f46;
+    border-radius: 16px 16px 0 16px;
+    float: right;
+}
+
+.msgCon1,.msgCon2{
+    width: 100%;
+    display: inline-block;
+
+}
+
+.chat-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4f5d73;
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+}
+
+.chat-btn img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+    justify-content: right;
+}
+
+.chat-btn:hover img{
+    transform: rotate(30deg);
+}
+
